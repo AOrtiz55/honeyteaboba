@@ -1,8 +1,5 @@
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'></head>
 <style>
-
-:root {
-	--vs-primary: 29 92 255;
-}
 
 /*Dialog Styles*/
 dialog {
@@ -148,11 +145,7 @@ button.primary {
     top:-100px
   }
   
-  /*
-  css keyframes based off:
-  https://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/
-  */
-  /*tested on chrome 24*/
+ 
   @-webkit-keyframes heartBeat { 
       0% { zoom:100%; }
       15% { zoom:120%; }
@@ -168,10 +161,7 @@ button.primary {
       35% { zoom:120%; }
       100% { zoom:100%; }
   }
-  /*
-  tested on IE9, should work but doesn't :(
-  https://developer.mozilla.org/en-US/docs/CSS/transform
-  */
+
   @-ms-keyframes heartBeat { 
       0% { transform:scale(1); }
       15% { transform:scale(1.2); }
@@ -179,7 +169,7 @@ button.primary {
       35% { transform:scale(1.2); }
       100% { transform:scale(1); }
   }
-  /*tested on FF 18*/
+
   @keyframes heartBeat { 
       0% { transform:scale(1); }
       15% { transform:scale(1.2); }
@@ -189,7 +179,7 @@ button.primary {
   }
   
 </style>
-
+<body>
 <h1 style="font-size: 32px;color: white;position: absolute;"> Will you be Aaron's girlfriend 梦哲?
 </h1>
 <button class="primary"  onclick="window.dialog.showModal();">YES</button>
@@ -213,9 +203,5 @@ button.primary {
 	<button onclick="window.no.close();" aria-label="close" class="x">❌</button>
 </dialog>
 
-
-<script>
-
-</script>
-
+</body>
 

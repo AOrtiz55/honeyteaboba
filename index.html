@@ -1,12 +1,16 @@
-@import "{{ site.theme }}";
-<style>
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+<style>
+
 :root {
 	--vs-primary: 29 92 255;
 }
 
 /*Dialog Styles*/
 dialog {
+    overflow: hidden;
 	padding: 1rem 3rem;
 	background: white;
 	max-width: 400px;
@@ -190,9 +194,9 @@ button.primary {
   
 </style>
 
-<h1 style="font-size: 20px;color: white;position: absolute;"> Will you be Aaron's girlfriend 梦哲?
+<h1 style="font-size: 32px;color: white;position: absolute;"> Will you be Aaron's girlfriend 梦哲?
 </h1>
-<button class="primary" onclick="window.dialog.showModal();">YES</button>
+<button class="primary" style="    margin-left: -35%;" onclick="window.dialog.showModal();">YES</button>
 <button class="primary" onclick="window.no.showModal();">NO</button>
 
 
@@ -213,6 +217,10 @@ button.primary {
 	<button onclick="window.no.close();" aria-label="close" class="x">❌</button>
 </dialog>
 
+
+<script>
+
+</script>
 
 <script>
 
